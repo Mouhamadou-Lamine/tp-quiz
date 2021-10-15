@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>QCM</title>
+</head>
+<body>
+
+    <div class="home-box custom-box ">
+        <h3>Instruction: Choisissez le nombre de question</h3>
+        <p>Nombre total de question: <span class="total-question"></span></p>
+        <button type="button" class="btn" id="ten" onclick="startQuiz()">Commencer</button>
+
+        <p>Nombre total de question: <span class="total-question">8</span></p>
+        <button type="button" class="btn" id="eight" onclick="startQuiz()">Commencer</button>
+
+        <p>Nombre total de question: <span class="total-question">6</span></p>
+        <button type="button" class="btn" id="six" onclick="startQuiz()">Commencer</button>
+
+        <p>Nombre total de question: <span class="total-question">4</span></p>
+        <button type="button" class="btn" id="four" onclick="startQuiz()">Commencer</button>
+
+        <p>Nombre total de question: <span class="total-question">2</span></p>
+        <button type="button" class="btn" id="two" onclick="startQuiz()">Commencer</button>
+    </div>
+    
+    <div class="quiz-box custom-box hide">
+
+        <div class="question-number">
+            
+        </div>
+
+        <div class="question-text">
+           
+        </div>
+
+        <div class="option-container">
+            
+        </div>
+
+        <div class="next-question-btn">
+            <button type="button" class="btn" id="next">Suivant</button>
+        </div>
+
+        <div class="answers-indicator">
+            
+        </div>
+
+    </div>
+
+    <div class="result-box custom-box hide">
+        <h1>Quiz Result</h1>
+        <table>
+            <tr>
+                <td>Nombre Total de Questions</td>
+                <td><span class="total-question"></span></td>
+            </tr>
+            <tr>
+                <td>Nombre de Tentative</td>
+                <td><span class="total-attempt"></span></td>
+            </tr>
+            <tr>
+                <td>Reponse Correct</td>
+                <td><span class="total-correct"></span></td>
+            </tr>
+            <tr>
+                <td>Mauvaise Reponse</td>
+                <td><span class="total-wrong"></span></td>
+            </tr>
+            <tr>
+                <td>Pourcentage</td>
+                <td><span class="percentage"></span></td>
+            </tr>
+            <tr>
+                <td>Ton Score Final</td>
+                <td><span class="total-score"></span></td>
+            </tr>
+        </table>
+
+        <button type="button" class="btn" id="replay">Rejouer</button>
+        <button type="button" class="btn" id="main">Retour au menu</button>
+    </div>
+    
+    <script src="quiz.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
